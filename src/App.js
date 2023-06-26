@@ -2,23 +2,29 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const react = `리엑트`
+  const notReact = `뤼웩튜`
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>{react} 안녕?</h1>
+        <h1>뒤졌니?</h1>
+        <br/>
+      </div>
+
+      <div>
+        {react === `리엑트` ? (
+            <h1>리엑트입니다.</h1>
+        ) : (
+            <h1>리엑트가 아닙니다.</h1>
+        )}
+        {notReact === `리엑트` ? (
+            <h1>리엑트입니다.</h1>
+        ) : (
+            <h1>리엑트가 아닙니다.</h1>
+        )}
+      </div>
+    </>
   );
 }
 
